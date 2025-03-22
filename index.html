@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="icon" href="cal.svg" type="image/icon type">
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <img src="img/equal.svg" alt="" onclick="calculate()">
+            <img src="img/percentage.svg" alt="add button" onclick="appendToDisplay('%')">
+            <img src="img/clear.svg" alt="C" onclick="clearDisplay()">
+            <img src="img/back.svg" alt="add button" onclick="deleteLast()">
+            <img src="img/add.svg" alt="add button" onclick="appendToDisplay('+')">
+            <img src="img/7.svg" alt="add button" onclick="appendToDisplay('7')">
+            <img src="img/8.svg" alt="add button" onclick="appendToDisplay('8')">
+            <img src="img/9.svg" alt="add button" onclick="appendToDisplay('9')">
+            <img src="img/sub.svg" alt="add button" onclick="appendToDisplay('-')">
+            <img src="img/4.svg" alt="add button" onclick="appendToDisplay('4')">
+            <img src="img/5.svg" alt="add button" onclick="appendToDisplay('5')">
+            <img src="img/6.svg" alt="add button" onclick="appendToDisplay('6')">
+            <img src="img/multiply.svg" alt="add button" onclick="appendToDisplay('*')">
+            <img src="img/1.svg" alt="add button" onclick="appendToDisplay('1')">
+            <img src="img/2.svg" alt="add button" onclick="appendToDisplay('2')">
+            <img src="img/3.svg" alt="add button" onclick="appendToDisplay('3')">
+            <img src="img/divide.svg" alt="add button" onclick="appendToDisplay('/')">
+            <img src="img/toggle.svg" alt="add button" onclick="appendToDisplay('+')">
+            <img src="img/zero.svg" alt="add button" onclick="appendToDisplay('0')">
+            <img src="img/dot.svg" alt="add button" onclick="appendToDisplay('.')">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
