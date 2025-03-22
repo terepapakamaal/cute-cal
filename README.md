@@ -1,2 +1,2 @@
-a basic calculator made using html, css & js. material ui icon used from figma community.
-<img src="img/readme.png" alt="cal">
+A Cute Calculator made using HTML, CSS & JS. material icon used from figma community and google fonts.
+<img src="img/readme.png" alt="cal" style="padding-top: 10px">
