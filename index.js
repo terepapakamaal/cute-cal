@@ -24,15 +24,8 @@ function calculate() {
 document.addEventListener("keydown", (event) => {
     if (/[\d+\-*/.%=]/.test(event.key)) {
         if (event.key === "=" || event.key === "Enter") {
-            if(display.value == "/%/g"){
-             calculate() + "%";
-            }
-            else{
-                calculate();
-            }
-            
-        } 
-            
+            calculate();
+        }
             
         else {
             appendToDisplay(event.key);
