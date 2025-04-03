@@ -15,7 +15,7 @@ function clearDisplay() {
 function calculate() {
     try {
         // Replace % with /100 to calculate percentage
-        display.value = eval(display.value.replace(/%/g, '/100*'));
+        display.value = eval(display.value.replace(/%/g, '*100/'));
     } catch (error) {
         display.value = "error";
     }
