@@ -21,6 +21,20 @@ function calculate() {
     }
 }
 
+function toggleOperation() {
+    const display = document.getElementById('display');
+    const currentValue = display.value;
+    const lastChar = currentValue.slice(-1);
+
+    if (lastChar === '+') {
+        display.value = currentValue.slice(0, -1) + '-';
+    } else if (lastChar === '-') {
+        display.value = currentValue.slice(0, -1) + '+';
+    } else {
+        display.value += '+';
+    }
+}
+
 document.addEventListener("keydown", (event) => {
     if (/[\d+\-*/.%=]/.test(event.key)) {
         if (event.key === "=" || event.key === "Enter") {
